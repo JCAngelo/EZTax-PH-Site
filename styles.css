@@ -1093,9 +1093,36 @@ a {
     background: var(--gradient-light);
 }
 
-.comparison-table {
-    max-width: 900px;
+.comparison-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     margin: 0 auto;
+    max-width: 900px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-medium-gray) var(--color-light-gray);
+}
+
+.comparison-table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.comparison-table-wrapper::-webkit-scrollbar-track {
+    background: var(--color-light-gray);
+    border-radius: 4px;
+}
+
+.comparison-table-wrapper::-webkit-scrollbar-thumb {
+    background: var(--color-medium-gray);
+    border-radius: 4px;
+}
+
+.comparison-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: var(--color-dark-gray);
+}
+
+.comparison-table {
+    min-width: 600px;
+    width: 100%;
     background: var(--color-white);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
