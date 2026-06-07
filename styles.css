@@ -379,17 +379,45 @@ a {
 
 .problem-section-header {
     text-align: center;
-    font-size: 1.75rem;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 700;
     color: var(--color-white);
-    margin: var(--spacing-lg) 0 var(--spacing-md) 0;
+    margin: var(--spacing-xl) 0 var(--spacing-md) 0;
+    padding-top: var(--spacing-lg);
+}
+
+.problem-scroll-container {
+    position: relative;
+    padding: 0 3rem;
 }
 
 .problem-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
     gap: var(--spacing-md);
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: var(--spacing-md) 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
     margin-bottom: var(--spacing-lg);
+}
+
+.problem-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.problem-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.problem-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.problem-grid::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .problem-card {
@@ -398,6 +426,10 @@ a {
     padding: var(--spacing-md);
     border-radius: var(--radius-md);
     transition: var(--transition-normal);
+    width: 320px;
+    min-width: 320px;
+    max-width: 320px;
+    flex-shrink: 0;
 }
 
 .problem-card:hover {
@@ -566,10 +598,37 @@ a {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.features-scroll-container {
+    position: relative;
+    padding: 0 3rem;
+}
+
 .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
     gap: var(--spacing-md);
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: var(--spacing-md) 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1);
+}
+
+.features-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.features-grid::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.features-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.features-grid::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .feature-card {
@@ -578,6 +637,11 @@ a {
     padding: var(--spacing-md);
     border-radius: var(--radius-md);
     transition: var(--transition-normal);
+    text-align: center;
+    width: 320px;
+    min-width: 320px;
+    max-width: 320px;
+    flex-shrink: 0;
 }
 
 .feature-card:hover {
