@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EZTax - AI-powered tax compliance and bookkeeping for Filipino micro-enterprises and self-employed professionals. File your BIR tax returns in 4 simple steps from your smartphone.">
+    <meta name="keywords" content="Philippine tax compliance, BIR tax filing, mobile tax software, automated bookkeeping Philippines, self-employed tax filing">
+    <meta name="author" content="EZTax - Lee Professional Services & Sprint19 Labs Inc.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="EZTax - Tax Compliance Made Simple">
+    <meta property="og:description" content="File your Philippine tax returns in 4 steps using just your smartphone. AI-powered bookkeeping for Filipino businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eztax.ph">
+    
+    <title>EZTax - Tax Compliance Made Simple | AI-Powered BIR Filing</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="EZTax Logo (1).png" alt="EZTax Logo" class="logo-img">
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#market">Market</a></li>
+                    <li><a href="#developer">The Developer</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#contact" class="btn-nav">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Filing At Your <span class="gradient-text">Fingertip</span></h1>
+                    <p class="hero-subtitle">File your Philippine tax returns in 4 steps using just your smartphone</p>
+                    <p class="hero-description">AI-powered bookkeeping and tax filing for Filipino micro-enterprises and self-employed professionals</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get Early Access</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Million Target Users</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="4">0</span>
+                            <span class="stat-label">Steps to Compliance</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number percent" data-target="100">0</span>
+                            <span class="stat-label">FREE For All Users</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone-mockup iphone">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="app-preview">
+                                <i class="fab fa-apple"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                        </div>
+                        <div class="phone-button"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#problem" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Problem Statement Section -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Tax Compliance Burden in the Philippines</h2>
+                <p class="section-subtitle">Business owners face overwhelming challenges in staying BIR-compliant</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Cost</h3>
+                    <p>Hiring part-time accountants is expensive for self-employed professionals and business owners</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Reliability</h3>
+                    <p>Quality and accuracy of part-time accounting services is inconsistent</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Time</h3>
+                    <p>Owners lose time that could be spent growing their business</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Accessibility</h3>
+                    <p>Current solutions require laptops and accounting knowledge</p>
+                </div>
+            </div>
+            <div class="problem-stats">
+                <div class="stat-highlight">
+                    <span class="stat-big">15M*</span>
+                    <span class="stat-text">Registered businesses and self-employed in the Philippines</span>
+                    <span class="stat-source">*Source: PSA Self-employed Report</span>
+                </div>
+                <div class="stat-highlight">
+                    <span class="stat-big">90%*</span>
+                    <span class="stat-text">Are micro-enterprises struggling with compliance</span>
+                    <span class="stat-source">*Source: DTI MSME Statistics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section - 4 Steps -->
+    <section class="solution" id="solution">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Compliance in <span class="gradient-text-black">4 Simple Steps</span></h2>
+                <p class="section-subtitle">From registration to filing, all from your smartphone</p>
+            </div>
+            <div class="steps-scroll-container">
+                <button class="scroll-btn scroll-left" aria-label="Scroll left"><i class="fas fa-chevron-left"></i></button>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <div class="step-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3 class="step-title">Scan Registration</h3>
+                        <p class="step-description">Scan your BIR Certificate of Registration (Form 2303). AI extracts TIN, RDO code, and business details automatically.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <div class="step-icon">
+                            <i class="fas fa-receipt"></i>
+                        </div>
+                        <h3 class="step-title">Scan Receipts</h3>
+                        <p class="step-description">Scan sales invoices and purchase receipts. OCR captures vendor details, amounts, taxes, and line items.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <div class="step-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3 class="step-title">Review & Confirm</h3>
+                        <p class="step-description">Verify extracted data is correct. Manual edits allowed before committing to your books.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">04</div>
+                        <div class="step-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <h3 class="step-title">File Tax Return</h3>
+                        <p class="step-description">Auto-compute tax payable, generate correct BIR forms, and file electronically.</p>
+                    </div>
+                </div>
+                <button class="scroll-btn scroll-right" aria-label="Scroll right"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose <span class="gradient-text-white">EZTax</span>?</h2>
+                <p class="section-subtitle">Built specifically for Filipino micro-enterprises and self-employed professionals</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile-First Design</h3>
+                    <p>Complete compliance from your smartphone - no laptop required</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered OCR</h3>
+                    <p>Scan physical receipts instead of manual data entry</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Automated Bookkeeping</h3>
+                    <p>Double-entry journal entries generated automatically</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Smart Tax Computation</h3>
+                    <p>BIR-compliant calculations for 8% Gross Sales Tax</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-Time Analytics</h3>
+                    <p>P&L health, top customers, vendors, and tax insights</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Compliant</h3>
+                    <p>Encrypted data storage, BIR-registered software provider</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Market Section -->
+    <section class="market" id="market">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built for Filipino Entrepreneurs</h2>
+                <p class="section-subtitle">Serving the backbone of the Philippine economy</p>
+            </div>
+            <div class="personas-grid">
+                <div class="persona-card">
+                    <div class="persona-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Self-Employed Professionals</h3>
+                    <p>Doctors, lawyers, online sellers, virtual assistants, freelancers</p>
+                    <span class="persona-tagline">"Focus on your practice, not paperwork"</span>
+                </div>
+                <div class="persona-card">
+                    <div class="persona-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>8% Gross Sales Tax Users</h3>
+                    <p>Simplified tax requirements using 8% in lieu of income tax and percentage tax</p>
+                    <span class="persona-tagline">"Perfect for growing businesses"</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Developer Section -->
+    <section class="developer" id="developer">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Developer</h2>
+                <p class="section-subtitle">A decade of experience at the intersection of tax compliance and technology</p>
+            </div>
+            <div class="developer-content">
+                <div class="developer-story">
+                    <p>For over a decade, I have worked at the intersection of tax compliance and business operations—witnessing firsthand the realities that every taxpayer eventually faces. Paying taxes is inevitable, but what often goes unseen is the heavy administrative burden that comes with it.</p>
+                    
+                    <p>Through years of navigating regulations, audits, and reporting obligations, I have experienced how tax processes—while essential—can distract businesses from what truly matters: growth, innovation, and value creation. Instead of focusing on strategy and expansion, companies and professionals alike are often weighed down by manual, repetitive, and complex tax tasks.</p>
+                    
+                    <p><strong>This experience shaped a vision.</strong></p>
+                    
+                    <p>I have long believed that paying the correct taxes should not require disproportionate effort. Compliance should be seamless, accurate, and efficient—enabled by technology rather than hindered by outdated processes. The goal is simple: to empower businesses to focus on their core operations while remaining fully compliant with confidence.</p>
+                    
+                    <p>With more than 10 years of tax experience, combined with a deep enthusiasm for technology and innovation, I set out to turn this vision into reality.</p>
+                    
+                    <p><strong>EZtax is the culmination of that journey.</strong></p>
+                    
+                    <p>It represents not just a solution, but a commitment—to simplify compliance, reduce administrative burden, and transform how taxes are managed. By leveraging modern technology, EZtax aims to bridge the gap between regulatory complexity and operational efficiency, making tax compliance less of a burden and more of an integrated, intelligent part of doing business.</p>
+                    
+                    <p class="developer-closing">Ultimately, EZtax is built on a belief that businesses should spend less time managing taxes—and more time building their future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Technology Section -->
+    <section class="technology" id="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Built with Cutting-Edge Technology</h2>
+                <p class="section-subtitle">Agentic AI and advanced OCR for Philippine tax compliance</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Agentic AI</h3>
+                    <p>Advanced document processing and data extraction</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-scan"></i>
+                    <h3>OCR Technology</h3>
+                    <p>Optimized for Philippine invoice formats</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Hybrid Cloud</h3>
+                    <p>Secure, scalable, and reliable infrastructure</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>BIR Integration</h3>
+                    <p>Electronic filing compliance</p>
+                </div>
+            </div>
+            <div class="bir-forms">
+                <h3>BIR Forms Coverage</h3>
+                <p>Initial forms for MVP: <strong>1701Q</strong> (Quarterly Income Tax Return) and <strong>1701</strong> (Annual Income Tax Return)</p>
+                <p class="forms-note">Focused on 8% Gross Sales Tax in lieu of income tax and percentage tax</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Advantage Section -->
+    <section class="competitive" id="competitive">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How We Compare</h2>
+                <p class="section-subtitle">EZTax vs. Traditional Solutions</p>
+            </div>
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="comparison-feature">Feature</div>
+                    <div class="comparison-competitor">Traditional Solutions</div>
+                    <div class="comparison-eztax">EZTax</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">Platform</div>
+                    <div class="comparison-competitor"><i class="fas fa-times"></i> Desktop Required</div>
+                    <div class="comparison-eztax"><i class="fas fa-check"></i> Mobile-First</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">Data Entry</div>
+                    <div class="comparison-competitor"><i class="fas fa-times"></i> Manual Entry</div>
+                    <div class="comparison-eztax"><i class="fas fa-check"></i> AI-Powered OCR</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">Bookkeeping</div>
+                    <div class="comparison-competitor"><i class="fas fa-times"></i> Manual</div>
+                    <div class="comparison-eztax"><i class="fas fa-check"></i> Automated</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">Pricing</div>
+                    <div class="comparison-competitor"><i class="fas fa-times"></i> Higher Cost</div>
+                    <div class="comparison-eztax"><i class="fas fa-check"></i> FREE</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-feature">Target Market</div>
+                    <div class="comparison-competitor"><i class="fas fa-times"></i> General</div>
+                    <div class="comparison-eztax"><i class="fas fa-check"></i> Non-VAT Focus</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Simplify Your Tax Compliance?</h2>
+                <p>Join the waitlist for early access</p>
+                <div class="cta-forms">
+                    <div class="form-container">
+                        <h3>Get Early Access</h3>
+                        <div class="google-form-embed">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfdceMPP-JurptJdkNJ6XojQY_VrMicYZecskFj9t-h0QjK0Q/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ph.eztax@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Metro Manila, Philippines</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p>AI-powered tax compliance for Filipino businesses</p>
+                    <p class="footer-company">By Lee Professional Services</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#market">Market</a></li>
+                        <li><a href="#developer">The Developer</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms of Service</a></li>
+                        <li><a href="bir-compliance.html">BIR Compliance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/30890579/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61570752446481" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EZTax. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
